@@ -1,0 +1,28 @@
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE / OS files
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# --------------------------------------------------------------------------
+# NOTE: .pt files (PyTorch models) are purposely NOT ignored in this repo.
+# They are under 100MB, so they can be pushed to GitHub natively, allowing
+# Google Cloud Build to pull them directly from the repository.
+# --------------------------------------------------------------------------
