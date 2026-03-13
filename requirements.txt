@@ -428,7 +428,7 @@ torchdiffeq==0.2.5
 torchsde==0.2.6
 torchvision==0.25.0
 tornado==6.5.2
-tqdm==4.65.0
+tqdm
 trainer==0.0.36
 traitlets==5.14.1
 trampoline==0.1.2
