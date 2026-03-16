@@ -457,8 +457,8 @@ async def get_inspections(limit: int = 20):
         return JSONResponse({"inspections": [], "error": str(e)})
 
 
-# ── Health check ──────────────────────────────────────────
-@app.get("/health")
+# ── Health check (GET + HEAD supported) ──────────────────
+@app.api_route("/health", methods=["GET", "HEAD"])
 async def health():
     return {"status": "ok", "model": MODEL_PATH, "supabase": supabase is not None}
 
